@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "sourceMap": true,
+    "lib": ["es2015", "dom"],
+    "noImplicitAny": true,
+    "module": "commonjs",
+    "target": "es5",
+    "jsx": "react"
+  },
+  "include": ["./src/**/*", "./typings/**/*.d.ts"],
+  "exclude": ["node_modules", "build", "scripts", "webpack", "jest"]
+}
