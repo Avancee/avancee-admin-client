@@ -8,6 +8,14 @@ module.exports = {
     ["@babel/plugin-proposal-decorators", { legacy: true }],
     ["@babel/plugin-proposal-class-properties", { loose: true }],
     "react-hot-loader/babel",
-    "@babel/plugin-syntax-dynamic-import"
+    "@babel/plugin-syntax-dynamic-import",
+    [
+      'import',
+      {
+        libraryName: 'antd',
+        libraryDirectory: 'lib',
+        style: 'css'
+      }
+    ]
   ]
 };

@@ -1,6 +1,6 @@
 {
-  "name": "minimal-react-webpack-babel-setup",
-  "version": "1.0.0",
+  "name": "avancee-admin",
+  "version": "0.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -37,10 +37,9 @@
     "@types/es6-promise": "^3.3.0",
     "@types/jest": "^23.3.12",
     "@types/webpack-env": "^1.13.6",
-    "@uifabric/fluent-theme": "^0.13.2",
-    "@uifabric/styling": "^6.41.0",
     "autoprefixer": "^9.4.5",
     "babel-loader": "^8.0.5",
+    "babel-plugin-import": "^1.11.0",
     "clean-webpack-plugin": "^1.0.0",
     "css-loader": "^2.1.0",
     "file-loader": "^3.0.1",
