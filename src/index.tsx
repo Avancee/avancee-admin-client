@@ -3,7 +3,7 @@ import * as ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import { init, RematchRootState } from '@rematch/core';
-import * as models from './models';
+import * as models from './models/index';
 import { Provider } from 'react-redux';
 
 export const store = init({
