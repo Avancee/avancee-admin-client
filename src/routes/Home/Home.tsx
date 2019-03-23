@@ -4,7 +4,12 @@ import * as styles from './index.m.css';
 import {connect} from 'react-redux';
 import * as avatar from '../../assets/avatar.jpeg';
 import './home.css';
+import { ModelConfig } from '@rematch/core';
+import { Dispatch } from '../../index';
 
+  interface IRootState  {
+ count:  ModelConfig<number, number>;
+}
 const Home: React.FunctionComponent = () => {
   return (
     <div>
@@ -14,11 +19,11 @@ const Home: React.FunctionComponent = () => {
     </div>
   );
 };
-const mapState = state => ({
+const mapState = (state:IRootState) => ({
 count: state.count,
 });
 
-const mapDispatch = ({ count: { addBy, addByAsync }}) => ({
+const mapDispatch = ({ count: { addBy, addByAsync }}:Dispatch) => ({
   addByOne: () => addBy(1),
   addByOneAsync: () => addByAsync(1)
 });
