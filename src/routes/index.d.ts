@@ -1,7 +1,9 @@
+import { ConnectedComponentClass } from "react-redux";
+
 export interface IChild {
   title: string;
   path: string;
-  component: React.LazyExoticComponent<React.FunctionComponent<{}>>;
+  component:  React.LazyExoticComponent<React.FunctionComponent<{}>> | React.LazyExoticComponent<ConnectedComponentClass<any, Pick<{}, never>>>;
 }
 
 export interface IRouteList extends Array<IRoute> {
